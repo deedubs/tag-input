@@ -23,11 +23,16 @@ function TagInput(input, opts) {
   input.parentNode.removeChild(input)
   this.view.container.appendChild(input)
 
+  input.onblur = function (e) {
+    self.addtag(e.target.value.replace(',',''));
+    e.target.value = '';    
+  };
+
   input.onkeyup = function (e) {
-    if (e.which === 13) {
-      e.preventDefault()
-      self.addtag(e.target.value)
-      e.target.value = ''
+    if (e.which === 188) {
+      e.preventDefault();
+      self.addtag(e.target.value.replace(',',''));
+      e.target.value = '';
     }
   }
 }
