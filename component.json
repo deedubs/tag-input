@@ -1,8 +1,8 @@
 {
   "name": "tag-input",
-  "repo": "tomerdmnt/tag-input",
+  "repo": "deedubs/tag-input",
   "description": "Turns a text input element into a pretty tags input",
-  "version": "0.0.2",
+  "version": "0.0.3Upda",
   "keywords": [ "tags", "tag", "input", "ui" ],
   "dependencies": { 
     "component/emitter": "*"
