@@ -39,7 +39,7 @@ function TagInput(input, opts) {
 
 TagInput.prototype.addtag = function (tag) {
   var self = this
-  if (this.model.tags.indexOf(tag) !== -1)
+  if (this.model.tags.indexOf(tag) !== -1 || tag.length === 0)
     return
 
   this.model.tags.push(tag)
